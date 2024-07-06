@@ -8,11 +8,7 @@ import { toast } from 'react-toastify';
 import ValidationService from '../../services/ValidationService';
 import axios from 'axios';
 import { FaStar, FaStarHalf, FaDesktop, FaRightLong, FaArrowRightLong, FaCoins, FaTabletScreenButton, FaChevronRight, FaFacebook,FaReddit,FaTwitter,FaInstagram, FaLinkedin, FaYoutube, FaTiktok, FaDiscord, FaCcPaypal } from "react-icons/fa6";
-
 import { BsQrCode } from "react-icons/bs";
-
-
-
 
 function Home() {
 
@@ -89,9 +85,9 @@ return (<AppLayout>
                                 onChange={e => setLoginFormData({...loginFormData, 'password' : e.target.value }) }
                             />
                         </div>
-                        <div class="d-grid my25">
+                        <div className="d-grid my25">
                             <button type="submit" className={['btn btn-success btn-primary-2 py10' , loginFormData.loading ? 'disabled' : ''].join(' ')} >
-                                {loginFormData.loading && <span class="spinner-grow spinner-grow-sm me15" aria-hidden="true"></span>}
+                                {loginFormData.loading && <span className="spinner-grow spinner-grow-sm me15" aria-hidden="true"></span>}
                                 <span>Sign In</span>
                             </button>
                         </div>
